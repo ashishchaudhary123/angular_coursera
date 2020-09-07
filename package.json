@@ -1,0 +1,24 @@
+{
+  "name": "angular_coursera",
+  "version": "1.0.0",
+  "description": "Test directory for learning GIT and NODE",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishchaudhary123/angular_coursera.git"
+  },
+  "author": "Ashish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishchaudhary123/angular_coursera/issues"
+  },
+  "homepage": "https://github.com/ashishchaudhary123/angular_coursera#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
