@@ -1,0 +1,30 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <!.. used to create a list of items that we will include in our template..>
+ 
+  <mat-list fxFlex>
+
+    <!.. ngfor for iterating over the array items..>
+
+    <mat-list-item *ngFor="let dish of dishes">
+
+      <!.. allows to include image ..>
+      
+      <img matListAvatar src = {{dish.image}} alt = {{dish.name}}>
+
+      <h1 matLine> {{dish.name}} </h1>
+
+      <p matLine>
+        <span> {{dish.description}} </span>
+      </p>
+
+    </mat-list-item>
+
+
+  </mat-list>
+
+
+
+</div>
