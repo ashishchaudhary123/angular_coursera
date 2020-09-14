@@ -31,13 +31,13 @@
 
   </div>
 
-  <div fxFlex="60" *ngIf="dish" >
+  <div fxFlex="40" *ngIf="dish" >
 
     <mat-list fxFlex>
 
       <h1 matLine><b>Comments</b></h1>
 
-      <mat-list-item *ngFor="let comment of comments" style="height: 80px;">
+      <mat-list-item *ngFor="let comment of dish.comments" style="height: 80px;">
 
         <div>
           <span>{{comment.comment}}</span><br>
