@@ -15,7 +15,7 @@
 
         <!.. ngfor for iterating over the array items ..>
 
-          <mat-grid-tile *ngFor="let dish of dishes" (click)="onSelect(dish)">
+          <mat-grid-tile *ngFor="let dish of dishes" [routerLink]="['/dishdetail',dish.id]">
 
             <!.. allows to include image ..>
 
@@ -31,9 +31,7 @@
       </mat-grid-list>
     </div>
 
-    <app-dishdetails [dish] = "selectedDish">
-      
-    </app-dishdetails>
+    
 
 </div>
 
