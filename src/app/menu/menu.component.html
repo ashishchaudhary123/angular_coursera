@@ -9,8 +9,9 @@
   </div>
 
 
+
   <!.. used to create a list of items that we will include in our template..>
-    <div fxFlex>
+    <div fxFlex *ngIf="dishes">
       <mat-grid-list cols="2" rowHeight="200px">
 
         <!.. ngfor for iterating over the array items ..>
@@ -31,8 +32,12 @@
       </mat-grid-list>
     </div>
 
-    
+    <div fxFlex [hidden]="dishes">
+      <mat-spinner>
+      </mat-spinner>
+                  <h4>Loading ..... please wait BC</h4>
+
+    </div>
+
 
 </div>
-
-  
