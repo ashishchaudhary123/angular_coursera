@@ -14,15 +14,13 @@ export class DishdetailsComponent implements OnInit {
 
     dish: Dish;
 
-
-
     constructor(private dishService: DishService, private location: Location, private route: ActivatedRoute) { }
 
     ngOnInit() {
 
         let id = this.route.snapshot.params['id'];
         this.dishService.getDish(id)
-            .then((dish) => this.dish = dish);
+            .subscribe((dish) => this.dish = dish);
 
     }
 
