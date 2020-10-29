@@ -20,7 +20,7 @@
 
             <!.. allows to include image ..>
 
-              <img height="200px" src={{dish.image}} alt={{dish.name}}>
+              <img height="200px" src="{{BaseURL + dish.image}}" alt={{dish.name}}>
 
               <mat-grid-tile-footer>
 
@@ -35,7 +35,7 @@
     <div fxFlex [hidden]="dishes">
       <mat-spinner>
       </mat-spinner>
-                  <h4>Loading ..... please wait BC</h4>
+                  <h4>Loading ..... please wait</h4>
 
     </div>
 

@@ -21,6 +21,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
+import { HttpClientModule } from '@angular/common/http';
+import { BaseURL } from './shared/baseurl';
 
 import 'hammerjs';
 
@@ -51,7 +53,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -71,10 +74,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     ReactiveFormsModule,
     MatSelectModule,
     MatSlideToggleModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    HttpClientModule
   ],
   providers: [DishService,
-    PromotionService, LeaderService
+    PromotionService, LeaderService,
+    { provide : 'BaseURL', useValue: BaseURL}
   ],
 
   entryComponents: [
